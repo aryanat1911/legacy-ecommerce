@@ -2,25 +2,33 @@
   "name": "e-comm-web",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://aryanat1911.github.io/legacy-ecommerce/",
   "dependencies": {
-    "@testing-library/jest-dom": "^5.16.4",
-    "@testing-library/react": "^13.1.1",
-    "@testing-library/user-event": "^13.5.0",
-    "react": "^18.1.0",
-    "react-dom": "^18.1.0",
+    "@chec/commerce.js": "^2.8.0",
+    "@material-ui/core": "^4.12.4",
+    "@material-ui/icons": "^4.11.3",
+    "@stripe/react-stripe-js": "^1.7.2",
+    "@stripe/stripe-js": "^1.29.0",
+    "gh-pages": "^4.0.0",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-hook-form": "^6.15.8",
+    "react-preloaders": "^3.0.3",
+    "react-router-dom": "^5.2.0",
     "react-scripts": "5.0.1",
+    "react-spinners": "^0.11.0",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "react-app"
     ]
   },
   "browserslist": {
